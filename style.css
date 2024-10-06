@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: url(banner.png);   or */
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav img{
+    width: 150px;
+}
+
+.navbar{
+    flex: 1;
+    text-align: right;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    /* font-size: 13px; */
+
+}
+
+.navbar ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+    
+}
+.navbar ul li a:hover::after{
+    width:100%;
+}
+.text-box{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;     /* width 90px because total width 100px ka hai to 90px me text rhe */
+    transform: translate(-50%,-50%);
+     text-align: center;
+}
+/* .text-box a::after{
+
+    background: #f44336;
+    content: '';
+    transition: 0.5s;
+    width: 0%;
+    height: 2px; 
+    
+}*/
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.text-btn{
+    text-decoration: none;
+    display: inline-block;
+    color:#fff;
+    border: 2px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.text-btn:hover{
+    border: 2px solid #f44336;
+    background: #fd925c;
+    transition: 2s;
+}
+ /*@media(max-width: 700px){            /* not work here but syntx right for correct text view in phone*/ 
+    /*.text-box h1{
+     font-size: 20px;
+}
+.navbar ul li{
+    display: block;
+}
+.navbar{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+
+    }
+    .navbar .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}  */
